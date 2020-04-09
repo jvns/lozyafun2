@@ -26,6 +26,9 @@
                 const id = `#participant_${evt.user} audio`,
                     audio = document.querySelector(id);
                 if (audio) {
+                  console.log("id is " + id);
+                  console.log("audio is " + audio);
+
                     audio.volume = evt.volume;
                 }
                 else {

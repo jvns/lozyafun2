@@ -5,10 +5,10 @@
      * This file is not part of the front-end code. It is
      * meant to be included in the Jitsi Meet server
      * installation. This is typically /usr/share/jitsi-meet.
-     * 
+     *
      * Once installed in the Jitsi Meet server, edit
      * Jitsi Meet's index.html to include jitsihax.js.
-     * 
+     *
      * Don't forget to also edit FRONT_END_SERVER below
      * to the server you are setting up to use the
      * Jitsi Meet External API:
@@ -29,7 +29,7 @@
                     audio.volume = evt.volume;
                 }
                 else {
-                    console.warn(`Could not find audio element for user ${userNameInput}`);
+                    console.log(`Could not find audio element for user ${userNameInput}`);
                 }
             }
         };

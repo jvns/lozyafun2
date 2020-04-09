@@ -163,7 +163,7 @@ export class Game {
             }
         });
         this.me.addEventListener("changeUserVolume", (evt) => {
-          console.log("changeUserVolumeHandler" + evt);
+          console.log("changeUserVolumeHandler" + JSON.stringify(evt));
             this.jitsiClient.txJitsiHax("setVolume", evt);
         });
         this.userList.push(this.me);

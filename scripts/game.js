@@ -109,7 +109,7 @@ export class Game {
         if (this.userLookup[evt.id]) {
             removeUser(evt);
         }
-        
+
         const user = new User(evt.id, evt.displayName, false);
         user.addEventListener("userPositionNeeded", (evt) => {
             this.jitsiClient.txGameData(evt.id, "userInitResponse");
@@ -163,6 +163,7 @@ export class Game {
             }
         });
         this.me.addEventListener("changeUserVolume", (evt) => {
+          console.log("changeUserVolumeHandler" + evt);
             this.jitsiClient.txJitsiHax("setVolume", evt);
         });
         this.userList.push(this.me);
